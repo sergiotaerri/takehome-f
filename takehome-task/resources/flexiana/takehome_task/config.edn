@@ -1,0 +1,15 @@
+{:duct.profile/base
+ {:duct.core/project-ns flexiana.takehome-task
+
+  :duct.router/cascading
+  [#ig/ref [:flexiana.takehome-task.handler.scramble/scramble]]
+
+  :flexiana.takehome-task.handler.scramble/scramble {}}
+
+ :duct.profile/dev   #duct/include "dev"
+ :duct.profile/local #duct/include "local"
+ :duct.profile/prod  {}
+
+ :duct.module/logging {}
+ :duct.module.web/api
+ {}}
